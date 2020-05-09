@@ -1,3 +1,10 @@
+.header-wraper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: #fff;
+}
 .title-slide {
     text-align: center;
 }
@@ -16,4 +23,42 @@
 .h-2 {
     font-size: 17px;
     margin-top: 20px;
+}
+.image-opacity{
+    position: relative;
+    padding-top: 35%;
+}
+.image-opacity img{
+    position: absolute;
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.image-opacity::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 2;
+}
+.iframe-video {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    z-index: 3;
+}
+
+.iframe-video iframe {
+    width: 100%;
+    height: 100%;
 }
