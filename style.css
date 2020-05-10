@@ -8,15 +8,32 @@
 .title-slide {
     text-align: center;
 }
-
-.image-2 {
-    width: 1360px;
+.carousel {
+    height: 650px;
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-item 
+{
+    overflow: hidden;
+    height: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .image-2 {
+    max-width: 1360px;
+    width: 100%;
     height: 650px;
 }
 .image-3 {
-    width: 1360px;
+    max-width: 1360px;
+    width: 100%;
     height: 650px;
-}
+} */
 .div-boxes {
     margin-top: 70px;
 }
@@ -63,15 +80,32 @@
     height: 100%;
 }
 .div-icon {
-    margin-top: 140px;
-    
+    margin-top: 140px;  
+}
+.div-icon .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    background-color: yellow;
+    padding: 4px;
 }
 .div-tour-package {
     margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 .p {
     margin-top: 20px;
@@ -79,9 +113,11 @@
 .map {
     width: 100%;
     height: 435px;
+    margin-top: 80px;
 }
 .div-footer {
    background-color: black;
+   width: 100%;
 }
 .ul-footer {
     /* padding: 30px */
@@ -93,4 +129,26 @@
 .div-rights {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-top: 1px solid #ffff;
+
+}
+.col-6{
+    padding: 0!important;
+}
+.row{
+    padding: 0!important;
+}
+.nav-link {
+    color: white;
+}
+.label {
+    color: white;
+}
+.py-3 {
+    color: white;
+}
+@font-face {
+    font-family: 'Raleway', sans-serif;
 }

@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
     <title>Bootstrap</title>
 </head>
 <body>
@@ -150,41 +152,52 @@
                       </div>
                 </div>
           </div>
+          <!-- section tour package -->
           <div class="div-tour-package">
               <h3>WE OFFER</h3>
               <h4>Popular Tour Package</h4>
-              <img src="images/shape 1.svg" alt="icon">
+              <img src="images/shape 1.svg" alt="icon">  
           </div>
          <div class="container div-icon">
                 <div class="row">
                     <div class="col">
-                        <img src="images/rectangle 8 copy 3.png" alt="nightgreece">
+                        <div class="img-box position-relative">
+                            <img class="img-relative" src="images/rectangle 8 copy 3.png" alt="nightgreece">
+                            <p class="p-absolute">Honeymoon</p>
+                        </div>
                         <p class="p">$299/person</p>
                         <h2>Blue Beauty of Greece</h2>
                         <p>5 Days / 6 Night</p>
                       </div>
                       <div class="col">
-                        <img src="images/clip.png" alt="phkhuket">
+                          <div class="img-box position-relative">
+                            <img class="img-relative" src="images/clip.png" alt="phkhuket">
+                            <p class="p-absolute">Holiday</p>
+                          </div>
                         <p class="p">$178/person</p>
                         <h2>Nature of Phuket</h2>
                         <p>5 Days / 6 Night</p>
                       </div>
                       <div class="col">
-                        <img src="images/eiffel.png" alt="eiffel">
+                        <div class="img-box position-relative">
+                            <img class="img-relative" src="images/eiffel.png" alt="eiffel">
+                            <p class="p-absolute">Holiday</p>
+                       </div>
                         <p class="p">$1111/person</p>
                         <h2>World Tour of Paris</h2>
                         <p>7 Days / 8 Night</p>
                       </div>    
           </div>
-          <!-- map -->
-          <div>
+     </div>
+      </section>
+           <!-- map -->
+           <div>
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.3283406182136!2d-89.41467618452084!3d43.07659197914533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807ac950a7f481d%3A0xc9e065e091733a64!2sUniversity%20of%20Wisconsin-Madison!5e0!3m2!1sen!2sge!4v1589043572211!5m2!1sen!2sge" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-      </section>
       <!-- footer -->
       <footer>
-    <div class="container div-footer">
-        <div class="row">
+    <div class="div-footer py-4">
+        <div class="row p-0 m-0">
             <div class="col">
                 <ul class="nav flex-column ul-footer">
                     <li class="nav-item">
@@ -244,17 +257,25 @@
                </div>
             <div class="col-6">
                 <form>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="exampleInputEmail1">Sumcribe to our news letters</label>
                       <input type="email" class="form-control input-email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </div> -->
+                    <label class="label" for="exampleInputEmail1">Sumcribe to our news letters</label>
+                    <div class="input-group mb-3 col-6 p-0">
+                      <input type="email" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+                      </div>
+                    </div>
                     </form>
                   </nav>
             </div>
         </div>
     </div>
     <div class="div-rights">
-        <p>Turism All Rights Reserved</p>
+        <p class="m-0 py-3">Turism All Rights Reserved</p>
     </div>
       </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
